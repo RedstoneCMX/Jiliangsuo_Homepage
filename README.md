@@ -5,5 +5,5 @@
 ![页面截图](https://github.com/RedstoneCMX/Jiliangsuo_Homepage/blob/master/showimages/show1.png)
 ![页面截图](https://github.com/RedstoneCMX/Jiliangsuo_Homepage/blob/master/showimages/show2.png)
 
-##链接展示
+##效果展示链接
 http://jiliangsuo.sinaapp.com/jiliangsuo/
