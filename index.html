@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>中国计量科学研究院容量密度室</title>
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Se4U8GL87qXQzUd4l4UHarfw"></script>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		
+		//读取百度地图
+        var map = new BMap.Map("allmap");            // 创建Map实例
+		var point = new BMap.Point(116.425805, 39.974716);    // 创建点坐标
+		var marker = new BMap.Marker(point);        // 创建标注    
+		map.addOverlay(marker);                     // 将标注添加到地图中
+		map.centerAndZoom(point,15);                     // 初始化地图,设置中心点坐标和地图级别。
+
+		var opts = {
+		  width : 280,     // 信息窗口宽度
+		  height: 60,     // 信息窗口高度
+		  title : "<div style='color:#FF9966'>中国计量科学研究院</div>" , // 信息窗口标题
+		  enableMessage:true,//设置允许信息窗发送短息
+		  message:""
+		}
+		var infoWindow = new BMap.InfoWindow("地址：北京市朝阳区北三环东路18号", opts);  // 创建信息窗口对象 
+		marker.addEventListener("click", function(){          
+			map.openInfoWindow(infoWindow,point); //开启信息窗口
+		});
+
+		map.enableScrollWheelZoom();                            //启用滚轮放大缩小
+		var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});// 左上角，添加比例尺
+		var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
+		var top_right_navigation = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL}); //右上角，仅包含平移和缩放按钮
+
+		map.addControl(top_left_control);        
+		map.addControl(top_left_navigation);     
+		map.addControl(top_right_navigation);   
+
+	});
+</script>
+
+<body>
+	<header class="myheader">
+		<div class="logo"><img src="images/logo.jpg" /></div>
+		<div class="nav">
+			<ul>
+				<li><a href="#" class="nav_link">主页</a></li>
+				<li><a href="#">实验室介绍</a></li>
+				<li><a href="#">人员介绍</a></li>
+				<li><a href="#">业务范围介绍</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<div class="main">
+		<div class="content">
+			<div class="showblock">
+				<div class="title">基本简介
+					<div id="remind1">
+						<div class="outmessageremind"></div>
+						<div class="messageremind"></div>
+					</div>
+				</div>
+				<div class="intro_content">
+					<div class="showimages">
+						<img src="images/jiliangsuo.jpg" />
+					</div>
+					<p>
+						<span style="color:#CC0033; font-size:25px;">中国计量科学研究院</span>成立于1955年，隶属国家质检总局，是社会公益型科研单位、国家最高的计量科学研究中心和国家级法定计量技术机构。承担着研究、建立、维护和保存国家计量基、标准和研究相关的精密测量技术的任务。建院以来已建立国家计量基准和标准302项，形成了国家基、标准体系的主体和核心，为保证全国量值的统一做出了重要贡献。建院50多年来，中国计量科学研究院以瞄准国际计量科学前沿，满足国家科技、经济和社会的发展及高新技术应用需要为目标，开展了大量的计量基础性、前瞻性和综合性的技术研究，共获得国家级、部门级科研成果奖300多项。为我国的国民经济建设、高新技术的发展和社会进步起到了重要的支撑作用。
+					</p>
+				</div>
+			</div>
+
+			<div class="showblock">
+				<div class="title">详细地址
+					<div id="remind2">
+						<div class="outmessageremind"></div>
+						<div class="messageremind"></div>
+					</div>
+				</div>
+				<p>中国计量科学研究院位于北京市北三环东路18号（和平西桥东南角），邮编100029.</p>
+				<div id="allmap"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
