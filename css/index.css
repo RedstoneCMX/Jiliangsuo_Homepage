@@ -1,100 +1,4 @@
 @CHARSET "UTF-8";
-body{
-	margin: 0;
-	padding: 0;
-	font-family: 微软雅黑;
-}
-.myheader{
-	height: 85px;
-	width: 100%;
-	position: fixed;
-	background: #2020B7;
-	z-index: 2;
-}
-.logo{
-	float: left;
-}
-.nav{
-	float: left;
-	margin-left: 20px;
-	height: 85px;
-	line-height: 85px;
-}
-header ul{
-	float: right;
-	margin-top: 0px;
-}
-header ul li{
-	list-style-image:none;
-	list-style-type:none;
-	float: left;
-}
-
-header ul li a{
-	display: block;
-	height: 85px;
-	color:#FFFFFF;
-	font-size: 16px;
-	text-decoration: none;
-	padding: 0 10px 0 10px;
-	transition:background 0.5s;
-	position: relative;
-	
-}
-
-header ul li a:after{
-	content: '';
-	position: absolute;
-	left: 50%;
-	bottom: 0px;
-	height: 0px;
-	width: 0px;
-	border-width:10px;
-	border-style:solid;
-	border-color:transparent transparent #2020B7 transparent;
-	z-index:1100;
-	margin-left:-10px;
-}
-
-header ul li a:hover{
-	background: #0099FF;
-}
-
-.main{
-	width: 100%;
-	position: absolute;
-	top:88px;
-}
-
-.content{
-	width: 1000px;
-	margin:auto;
-	border: 1px solid #eee;
-}
-.showblock{
-	margin: 20px 20px 20px 20px;
-}
-
-.title{
-	font-size: 14px;
-	color: #FFFFFF;
-	background: #A3A3A3;
-	padding: 10px 10px 10px 10px;
-	position: relative;
-}
-
-.intro_content{
-	margin-top: 5px;
-}
-
-.showimages{
-	text-align: center;
-}
-.intro_content p{
-	text-align: justify;
-	font-size: 14px;
-}
-
 #allmap{
 	width: 100%;
 	height: 300px;
@@ -109,41 +13,13 @@ header ul li a:hover{
 	-webkit-animation:location 0.5s ease 0.5s forwards;
 }
 #remind2{
-	top: -300px;
+	top: -320px;
 	left:490px;
 	position: absolute;
 	animation: location2 0.5s ease 0.5s forwards;
 	-webkit-animation:location2 0.5s ease 0.5s forwards;
 }
-.messageremind{
-	position: absolute;
-	border-radius: 50%;
-	background: #03a9f4;
-	color: #FFFFFF;
-	font-size: 13px;
-	height: 20px;
-	width: 20px;
-	text-align: center;
-	
 
-}
-
-.outmessageremind{
-	position: absolute;
-	border-radius: 50%;
-	background: #0066CC;
-	opacity: 0.5;
-	height: 20px;
-	width: 20px;
-	box-shadow: 0 2px 11px rgba(0,0,0,.3);
-	-webkit-box-shadow:0 2px 11px rgba(0,0,0,.3);
-	animation:grow infinite 0.5s linear alternate;
-	-webkit-animation:grow infinite 0.5s linear alternate; /*Safari and Chrome*/
-	transform: scale(1.5);
-	-webkit-transform:scale(1.5);
-	
-
-}
 
 @keyframes location{
 	from { top:180px; left: 490px; }
@@ -156,24 +32,11 @@ header ul li a:hover{
 }
 
 @keyframes location2{
-	from { top:-300px; left: 490px; }
+	from { top:-320px; left: 490px; }
 	to {top:7px; left: 80px;}
 }
 
 @-webkit-keyframes location2{
-	from { top:-300px; left: 490px; }
+	from { top:-320px; left: 490px; }
 	to {top:7px; left: 80px;}
-}
-
-
-@keyframes grow
-{
-from {transform: scale(1.5);}
-to {transform: scale(2);}
-}
-
-@-webkit-keyframes grow /*Safari and Chrome*/
-{
-from {-webkit-transform: scale(1.5);}
-to {-webkit-transform: scale(2);}
 }

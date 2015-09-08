@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+#remind{
+	top: 180px;
+	left:490px;
+	position: absolute;
+	animation: location 0.5s ease 0.5s forwards;
+	-webkit-animation:location 0.5s ease 0.5s forwards;
+}
+
+@keyframes location{
+	from { top:180px; left: 490px; }
+	to {top:7px; left: 120px;}
+}
+
+@-webkit-keyframes location{
+	from { top:180px; left: 490px; }
+	to {top:7px; left: 120px;}
+}
