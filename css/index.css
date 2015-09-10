@@ -40,3 +40,9 @@
 	from { top:-320px; left: 490px; }
 	to {top:7px; left: 80px;}
 }
+
+.intro_content p{
+	text-align: justify;
+	font-size: 14px;
+	line-height: 20px;
+}

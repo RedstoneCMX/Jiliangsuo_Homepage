@@ -1,18 +1,64 @@
 @CHARSET "UTF-8";
-#remind{
-	top: 180px;
-	left:490px;
+#remind1{
+	top: 222px;
+	left:470px;
 	position: absolute;
 	animation: location 0.5s ease 0.5s forwards;
 	-webkit-animation:location 0.5s ease 0.5s forwards;
 }
 
 @keyframes location{
-	from { top:180px; left: 490px; }
-	to {top:7px; left: 120px;}
+	from { top:222px; left: 470px; }
+	to {top:7px; left: 80px;}
 }
 
 @-webkit-keyframes location{
-	from { top:180px; left: 490px; }
-	to {top:7px; left: 120px;}
+	from { top:222px; left: 470px; }
+	to {top:7px; left: 80px;}
+}
+
+.horizontal_list{
+	overflow: hidden;
+	padding:0px;
+	margin: 0px;
+}
+
+.horizontal_list li{
+	list-style-image:none;
+	list-style-type:none;
+	list-style-position: inside;
+	float: left;
+	height: 170px;
+	width: 460px;
+	background: #EDEDED;
+	margin: 10px 10px 10px 10px;
+	transition: transform 0.5s, background 0.5s;
+	-webkit-transition: -webkit-transform 0.5s,background 0.5s;
+}
+
+.horizontal_list li:hover{
+	transform:scale(1.02);
+	-webkit-transform: scale(1.02);
+	cursor: pointer;
+	box-shadow:3px 3px 3px #aaaaaa;
+	background: #CCCCCC;
+}
+
+.photo{
+	margin: 10px 20px 0px 20px;
+	float: left;
+}
+
+.photo img{
+	height: 150px;
+}
+
+.personal_info{
+	width: 290px;
+	margin: 10px 0px 0px 0px;
+	float: left;
+	text-align: justify;
+	font-size:14px;
+	line-height: 15px;
+
 }
