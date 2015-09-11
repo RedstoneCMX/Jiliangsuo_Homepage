@@ -23,22 +23,22 @@
 
 @keyframes location{
 	from { top:180px; left: 490px; }
-	to {top:7px; left: 80px;}
+	to {top:7px; left: 90px;}
 }
 
 @-webkit-keyframes location{
 	from { top:180px; left: 490px; }
-	to {top:7px; left: 80px;}
+	to {top:7px; left: 90px;}
 }
 
 @keyframes location2{
 	from { top:-320px; left: 490px; }
-	to {top:7px; left: 80px;}
+	to {top:7px; left: 90px;}
 }
 
 @-webkit-keyframes location2{
 	from { top:-320px; left: 490px; }
-	to {top:7px; left: 80px;}
+	to {top:7px; left: 90px;}
 }
 
 .intro_content p{

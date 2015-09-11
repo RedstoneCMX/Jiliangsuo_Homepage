@@ -9,12 +9,12 @@
 
 @keyframes location{
 	from { top:180px; left: 490px; }
-	to {top:7px; left: 120px;}
+	to {top:7px; left: 130px;}
 }
 
 @-webkit-keyframes location{
 	from { top:180px; left: 490px; }
-	to {top:7px; left: 120px;}
+	to {top:7px; left: 130px;}
 }
 .intro_content p{
 	text-align: justify;
