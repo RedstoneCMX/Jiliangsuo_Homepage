@@ -12,22 +12,35 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 
-		
+		$("#person1").click(function(){
+			//$(".showdetailperson").addClass("smalltobig");
+			$(".showdetailperson").show();
+			$(".showoneperson").removeClass("bigtosmall");
+			$(".showoneperson").addClass("smalltobig");
+		});
+
+		$(".close").click(function(){
+			$(".showdetailperson").hide();
+			$(".showoneperson").removeClass("smalltobig");
+			$(".showoneperson").addClass("bigtosmall");
+		});
 		 
 
 	});
 </script>
 
 <body>
-	<header class="myheader">
-		<div class="logo"><img src="images/logo.jpg" /></div>
-		<div class="nav">
-			<ul>
-				<li><a href="index.html">主页</a></li>
-				<li><a href="labintroduction.html">实验室介绍</a></li>
-				<li><a href="peopleintroduction.html">人员介绍</a></li>
-				<li><a href="yewuscope.html">业务范围介绍</a></li>
-			</ul>
+	<header class="headerstyle">
+		<div class="myheader">
+			<div class="logo"><img src="images/logo.jpg" /></div>
+			<div class="nav">
+				<ul>
+					<li><a href="index.html">主页</a></li>
+					<li><a href="labintroduction.html">实验室介绍</a></li>
+					<li><a href="peopleintroduction.html">人员介绍</a></li>
+					<li><a href="yewuscope.html">业务范围介绍</a></li>
+				</ul>
+			</div>
 		</div>
 	</header>
 
@@ -45,7 +58,7 @@
 
 				<div class="intro_content">
 					<ul class="horizontal_list">
-						<li>
+						<li id="person1">
 							<div class="photo"><img src = "images/chenmingxin.jpeg" /></div>
 							<div class="personal_info">
 								<p><span style="color:#CC0033; font-size:20px;">陈明新</span></p>
@@ -129,6 +142,22 @@
 					</ul>
 				</div>
 			</div>
+		</div>
+	</div>
+
+	<footer class="myfooter">
+		CopyRight©版权所有 2015-2016 中国计量科学研究院密度容量实验室
+	</footer>
+
+	<div class="showdetailperson">
+	</div>
+	<div class="showoneperson">
+		<div class="close" title="关闭"><i class="icon-remove-sign"></i></div>
+		<div class="photo"><img src = "images/chenmingxin.jpeg" /></div>
+		<div class="personal_info">
+			<p><span style="color:#CC0033; font-size:20px;">陈明新</span></p>
+			<hr/>
+			网名Redstone，北京理工大学计算机学院硕士在读。研究方向网络与信息安全，主要专注于web安全，以及匿名订购协议的研究。本科期间独立完成多项web开发项目，前端后端全栈工程师。未来将转战大型网站架构分析，Hadoop，spark，大数据分析等方向。
 		</div>
 	</div>
 </body>
