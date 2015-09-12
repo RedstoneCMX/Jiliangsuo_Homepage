@@ -59,7 +59,7 @@
 	height: 150px;
 }
 
-.personal_info{
+.shortpersonal_info{
 	width: 290px;
 	margin: 10px 0px 0px 0px;
 	float: left;
@@ -72,16 +72,17 @@
 .showoneperson{
 	position: fixed;
 	z-index: 3;
-	height: 300px;
-	width: 460px;
+	height: 600px;
+	width: 750px;
 	background: #EDEDED;
 	top: 50%;
 	left: 50%;
-	margin-top: -150px;
-	margin-left: -230px;
+	margin-top: -300px;
+	margin-left: -375px;
 	transform:scale(0);
 	-webkit-transform:scale(0);
 	box-shadow:0px 0px 5px #F0F8FF;
+	
 }
 
 .showdetailperson{
@@ -149,4 +150,64 @@
 @-webkit-keyframes decreasesmall{
 	from{-webkit-transform:scale(1.0);}
 	to{-webkit-transform:scale(0);}
+}
+
+.detail_baseinfo{
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.personal_baseinfo{
+	width: 540px;
+	margin: 10px 0px 10px 0px;
+	float: left;
+	text-align: justify;
+	font-size:14px;
+	line-height: 15px;
+}
+
+.name{
+	border-bottom: 1px solid #8B8B83;
+	padding-bottom: 15px;
+	margin-top: 15px;
+}
+
+.detailphoto{
+	margin: 10px 20px 10px 20px;
+	float: left;
+}
+.detailphoto img{
+	height: 210px;
+}
+
+.detail_content{
+	width: 710px;
+	height: 340px;
+	margin:auto;
+	overflow: auto;
+}
+
+.detail_content>ul{
+	list-style-image:none;
+	list-style-type:none;
+	list-style-position: inside;
+	padding: 0px;
+	margin: 0px;
+}
+
+.detail_content>ul>li{
+	margin-bottom: 20px;
+}
+
+.detail_title{
+	font-size: 15px;
+	margin: 0px 0px 10px 0px;
+	padding: 0px 0px 5px 0px;
+	color: #004e98;
+	border-bottom: 2px solid #004e98;
+}
+
+.detail_intro{
+	font-size: 14px;
+	line-height: 20px;
 }
