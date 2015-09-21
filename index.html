@@ -2,11 +2,14 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>中国计量科学研究院容量密度室</title>
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Se4U8GL87qXQzUd4l4UHarfw"></script>
-	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 601px)" href="css/common.css"/>
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="css/mobilecommon.css"/>
+	
 	<link rel="stylesheet" type="text/css" href="css/index.css"/>
 	<link href="FontAwesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
 </head>
@@ -48,7 +51,11 @@
 <body>
 	<header class="headerstyle">
 		<div class="myheader">
-			<div class="logo"><img src="images/logo.jpg" /></div>
+			<div class="logo">
+				<img src="images/logo.jpg" />
+				<div class="mobilenav"><i class="icon-list"></i></div>
+			</div>
+
 			<div class="nav">
 				<ul>
 					<li><a href="index.html">主页</a></li>
