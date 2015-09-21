@@ -20,15 +20,22 @@ body{
 }
 .mobilenav{
 	width: 15%;
-	height: 60px;
+	height: 55px;
 	text-align: center;
-	line-height: 60px;
+	line-height: 55px;
 	float: right;
 	color: #FFFFFF;
 	font-size: 20px;
 
 }
-
+.nav{
+	display: none;
+}
+.mobilenav:hover
+{
+	cursor: pointer;
+	color: #E0FFFF;
+}
 
 header ul{
 	margin: 0px;
