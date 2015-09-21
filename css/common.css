@@ -18,6 +18,9 @@ body{
 .logo{
 	float: left;
 }
+.mobilenav{
+	display: none;
+}
 .nav{
 	float: left;
 	margin-left: 20px;
