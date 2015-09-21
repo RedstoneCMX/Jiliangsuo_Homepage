@@ -1,0 +1,137 @@
+@CHARSET "UTF-8";
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 微软雅黑;
+}
+.headerstyle{
+}
+.myheader{
+	width: 100%;
+	background: #2020B7;
+	z-index: 2;
+}
+
+.logo{
+	width: 100%;
+}
+.logo img{
+	width: 85%;
+}
+.mobilenav{
+	width: 15%;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	float: right;
+	color: #FFFFFF;
+	font-size: 20px;
+
+}
+
+
+header ul{
+	margin: 0px;
+	padding: 0px 0px 0px 5px;
+}
+header ul li{
+	list-style-image:none;
+	list-style-type:none;
+}
+
+header ul li a{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	color:#FFFFFF;
+	font-size: 15px;
+	text-decoration: none;
+	padding: 0 10px 0 10px;
+	transition:background 0.5s;
+	position: relative;
+	
+}
+
+header ul li a:hover{
+	background: #0099FF;
+}
+
+.main{
+	width: 100%;
+}
+
+.content{
+	width: 100%;
+	margin:auto;
+	border: 1px solid #eee;
+}
+.showblock{
+	margin: 5px 5px 5px 5px;
+}
+
+.title{
+	font-size: 14px;
+	color: #FFFFFF;
+	background: #A3A3A3;
+	padding: 10px 10px 10px 10px;
+	position: relative;
+}
+
+.intro_content{
+	margin-top: 5px;
+}
+
+.showimages{
+	text-align: center;
+}
+.showimages img{
+	width:100%;
+}
+.messageremind{
+	position: absolute;
+	border-radius: 50%;
+	background: #03a9f4;
+	color: #FFFFFF;
+	font-size: 13px;
+	height: 20px;
+	width: 20px;
+	text-align: center;
+	
+
+}
+
+.outmessageremind{
+	position: absolute;
+	border-radius: 50%;
+	background: #0066CC;
+	opacity: 0.5;
+	height: 20px;
+	width: 20px;
+	box-shadow: 0 2px 11px rgba(0,0,0,.3);
+	-webkit-box-shadow:0 2px 11px rgba(0,0,0,.3);
+	animation:grow infinite 0.5s linear alternate;
+	-webkit-animation:grow infinite 0.5s linear alternate; /*Safari and Chrome*/
+	transform: scale(1.5);
+	-webkit-transform:scale(1.5);
+	
+
+}
+
+@keyframes grow
+{
+from {transform: scale(1.5);}
+to {transform: scale(2);}
+}
+
+@-webkit-keyframes grow /*Safari and Chrome*/
+{
+from {-webkit-transform: scale(1.5);}
+to {-webkit-transform: scale(2);}
+}
+
+.myfooter{
+	margin: 20px 0px 20px 0px;
+	font-size: 14px;
+	text-align: center;
+	position: relative;
+}
