@@ -43,7 +43,12 @@
 
 		map.addControl(top_left_control);        
 		map.addControl(top_left_navigation);     
-		map.addControl(top_right_navigation);   
+		map.addControl(top_right_navigation);
+
+
+		$(".mobilenav").click(function(){
+			$(".nav").slideToggle();
+		});   
 
 	});
 </script>
