@@ -5,41 +5,79 @@
 	margin-top: 5px;
 }
 
-#remind1{
-	top: 180px;
-	left:490px;
-	position: absolute;
-	animation: location 0.5s ease 0.5s forwards;
-	-webkit-animation:location 0.5s ease 0.5s forwards;
+@media screen and (max-width: 600px){
+	#remind1{
+		top: 140px;
+		left: 45%;
+		position: absolute;
+		animation: location 0.5s ease 0.5s forwards;
+		-webkit-animation:location 0.5s ease 0.5s forwards;
+	}
+	#remind2{
+		top: -420px;
+		left:45%;
+		position: absolute;
+		animation: location2 0.5s ease 0.5s forwards;
+		-webkit-animation:location2 0.5s ease 0.5s forwards;
+	}
+	@keyframes location{
+		from { top:140px; left: 45%; }
+		to {top:7px; left: 90px;}
+	}
+
+	@-webkit-keyframes location{
+		from { top:140px; left: 45%; }
+		to {top:7px; left: 90px;}
+	}
+
+	@keyframes location2{
+		from { top:-420px; left: 45%; }
+		to {top:7px; left: 90px;}
+	}
+
+	@-webkit-keyframes location2{
+		from { top:-420px; left: 45%; }
+		to {top:7px; left: 90px;}
+	}
 }
-#remind2{
-	top: -320px;
-	left:490px;
-	position: absolute;
-	animation: location2 0.5s ease 0.5s forwards;
-	-webkit-animation:location2 0.5s ease 0.5s forwards;
+
+@media screen and (min-width: 601px){
+	#remind1{
+		top: 180px;
+		left:490px;
+		position: absolute;
+		animation: location 0.5s ease 0.5s forwards;
+		-webkit-animation:location 0.5s ease 0.5s forwards;
+	}
+	#remind2{
+		top: -320px;
+		left:490px;
+		position: absolute;
+		animation: location2 0.5s ease 0.5s forwards;
+		-webkit-animation:location2 0.5s ease 0.5s forwards;
+	}
+	@keyframes location{
+		from { top:180px; left: 490px; }
+		to {top:7px; left: 90px;}
+	}
+
+	@-webkit-keyframes location{
+		from { top:180px; left: 490px; }
+		to {top:7px; left: 90px;}
+	}
+
+	@keyframes location2{
+		from { top:-320px; left: 490px; }
+		to {top:7px; left: 90px;}
+	}
+
+	@-webkit-keyframes location2{
+		from { top:-320px; left: 490px; }
+		to {top:7px; left: 90px;}
+	}
 }
 
 
-@keyframes location{
-	from { top:180px; left: 490px; }
-	to {top:7px; left: 90px;}
-}
-
-@-webkit-keyframes location{
-	from { top:180px; left: 490px; }
-	to {top:7px; left: 90px;}
-}
-
-@keyframes location2{
-	from { top:-320px; left: 490px; }
-	to {top:7px; left: 90px;}
-}
-
-@-webkit-keyframes location2{
-	from { top:-320px; left: 490px; }
-	to {top:7px; left: 90px;}
-}
 
 .intro_content p{
 	text-align: justify;
