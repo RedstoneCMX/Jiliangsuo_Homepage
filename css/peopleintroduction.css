@@ -69,6 +69,11 @@
 
 }
 
+.shortpersonal_info p{
+	color:#CC0033; 
+	font-size:20px;
+}
+
 .showoneperson{
 	position: fixed;
 	z-index: 3;
