@@ -1,5 +1,5 @@
 # Jiliangsuo_Homepage
-计量所的一个主页
+计量所的一个主页，支持手机端响应显示。
 
 ##页面截图
 ![页面截图](https://github.com/RedstoneCMX/Jiliangsuo_Homepage/blob/master/showimages/show1.png)
