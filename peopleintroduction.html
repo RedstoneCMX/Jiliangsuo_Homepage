@@ -20,12 +20,25 @@
 			$(".showdetailpersonbg").show();
 			$(".showoneperson").removeClass("bigtosmall");
 			$(".showoneperson").addClass("smalltobig");
+			//定时器，500毫秒之后执行
+			var timer=setTimeout(function(){
+				//js的媒体查询判断
+				var mq = window.matchMedia('(max-width: 600px)');
+				if(mq.matches){
+					$(".main").hide();
+				}
+			},500);
+			
 		});
 
 		$(".close").click(function(){
 			$(".showdetailpersonbg").hide();
 			$(".showoneperson").removeClass("smalltobig");
 			$(".showoneperson").addClass("bigtosmall");
+			var mq = window.matchMedia('(max-width: 600px)');
+			if(mq.matches){
+				$(".main").show();
+			}
 		});
 
 		$(".mobilenav").click(function(){
