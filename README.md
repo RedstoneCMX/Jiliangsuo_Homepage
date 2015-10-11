@@ -11,6 +11,8 @@
 ![页面截图](https://github.com/RedstoneCMX/Jiliangsuo_Homepage/blob/master/showimages/show7.jpg)
 ![页面截图](https://github.com/RedstoneCMX/Jiliangsuo_Homepage/blob/master/showimages/show8.jpg)
 ![页面截图](https://github.com/RedstoneCMX/Jiliangsuo_Homepage/blob/master/showimages/show9.jpg)
+![页面截图](https://github.com/RedstoneCMX/Jiliangsuo_Homepage/blob/master/showimages/show11.jpg)
+![页面截图](https://github.com/RedstoneCMX/Jiliangsuo_Homepage/blob/master/showimages/show12.jpg)
 ![页面截图](https://github.com/RedstoneCMX/Jiliangsuo_Homepage/blob/master/showimages/show10.jpg)
 ##效果展示链接
 http://jiliangsuo.sinaapp.com/jiliangsuo/
